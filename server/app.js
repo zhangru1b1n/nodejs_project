@@ -27,12 +27,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/users', usersRouter);
 app.use(webNewsRouter)
 app.use(webProductRouter)
+
+
+
 // 验证token
 app.use((req,res,next)=>{
   //如果token有效，next()
   //过期则返回401
   if(req.url=="/adminapi/user/login"){
-    // console.log('woshishabi')
     next()
     return;
   }

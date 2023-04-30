@@ -61,6 +61,7 @@ const configRoute = () => {
   })
   store.commit('changeGetterRouter', true)
 }
+
 function checkPermission(item) {
   if (item.requireAdmin) {
     return store.state.userInfo.role === 1

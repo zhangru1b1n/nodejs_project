@@ -1,7 +1,5 @@
 import axios from "axios"
 
-
-
 const upload = (path, userForm) => {
     //因为涉及到了文件上传 所以需要使用FormData对象
     const params = new FormData()
