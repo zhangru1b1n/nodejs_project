@@ -38,8 +38,7 @@ app.use((req,res,next)=>{
     next()
     return;
   }
-
-  //获得token
+  // 获得token
   const token = req.headers["authorization"].split(" ")[1]
   if(token){
     const payload = JWT.verify(token)

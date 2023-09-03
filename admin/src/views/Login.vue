@@ -139,7 +139,6 @@ const submitForm = () => {
 
             axios.post('/adminapi/user/login', loginForm).then((res) => {
                 if (res.data.ActionType == 'OK') {
-                    console.log(res.data.data)
                     store.commit('changeuserInfo',res.data.data)
                     // console.log(store.state.userInfo)
                     router.push('/')

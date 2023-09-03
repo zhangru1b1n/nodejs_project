@@ -54,7 +54,6 @@ const configRoute = () => {
     name: 'mainbox',
     component: () => import('../views/MainBox.vue')
   })
-
   //添加路由
   routers.forEach(item => {
     checkPermission(item) && router.addRoute('mainbox', item)
