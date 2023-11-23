@@ -1,7 +1,5 @@
 <template>
     <el-header>
-
-
         <div class="left">
             <el-icon v-if="!$store.state.isCollapse" @click="changeCollapse">
                 <ArrowLeftBold />
